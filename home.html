@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/home.loder.css">
+    <link rel="stylesheet" href="../public/css/home.pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="stater-animation">
+        <div id="load">
+            <div>G</div>
+            <div>N</div>
+            <div>I</div>
+            <div>D</div>
+            <div>A</div>
+            <div>O</div>
+            <div>L</div>
+        </div>
+    </div>
+
+    <div id="main">
+
+        <div id="back-ground">
+
+        </div>
+        <div id="page1">
+
+            <div id="nav">
+                <nav>
+                    <ul>
+                        <a href="">
+                            <li>Home</li>
+                        </a>
+                        <a href="">
+                            <li>Maps</li>
+                        </a>
+                        <a href="">
+                            <li>our Services</li>
+                        </a>
+                        <a href="">
+                            <li>Settings</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="search-area">
+                <div id="input-location">
+                    <input type="search" id="beachSearch" placeholder="Enter Your Beach Location"
+                        list="beachSuggestions">
+                    <datalist id="beachSuggestions">
+                        <option value="Wagah Beach, Goa, India">
+                        <option value="Anjuna Beach, Goa, India">
+                        <option value="Baga Beach, Goa, India">
+                        <option value="Calangute Beach, Goa, India">
+                        <option value="Vagator Beach, Goa, India">
+                        <option value="Palolem Beach, Goa, India">
+                        <option value="Candolim Beach, Goa, India">
+                        <option value="Colva Beach, Goa, India">
+                        <option value="Dona Paula Beach, Goa, India">
+                        <option value="Miramar Beach, Panaji, Goa, India">
+                    </datalist>
+                    <button id="submit-button">Search</button>
+                </div>
+            </div>
+
+            
+            <div id="give-data-user" style="display: none;"></div>
+            <div id="data">
+                <div id="details">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="particles">
+
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../public/js/home.js"></script>
+    <script src="../public/js/cursor.animation.js"></script>
+    <script src="../public/js/beaches.js"></script>
+    <script src="../public/js/beacheStatus.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

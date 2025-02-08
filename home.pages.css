@@ -1,0 +1,284 @@
+body 
+{
+    background-image: url('https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg');
+    /* background-color: ; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    object-fit: cover;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+
+}
+#main
+{
+    display: none;
+    width: 100%;
+}
+#back-ground
+{
+    background-color: rgba(45, 48, 48, 0.498);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+#page1 {
+  
+  height: 100vh;
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  /* background-color: rgba(54, 57, 56, 0.582); */
+  /* backdrop-filter: blur(12px); */
+
+}
+
+#nav 
+{
+    width: 100%;
+    
+}
+#nav nav 
+{
+    width: 80%;
+    margin: 0px auto;
+    
+}
+#nav nav ul 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    /* border: 1px solid blue; */
+    border-radius: 32px;
+    background-color: rgba(171, 211, 218, 0.598);
+    backdrop-filter: blur(12px);
+}
+
+#nav nav ul li
+{
+    border: 1px solid transparent;
+    list-style: none;
+    padding: 20px;
+
+}
+
+#nav nav ul li:hover 
+{
+    border-radius:12px ;
+    background-color:rgba(48, 106, 137, 0.573);
+    backdrop-filter: blur(100px);
+
+}
+
+#nav nav ul a
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* search-area css  */
+
+
+#search-area {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#search-area #input-location {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    backdrop-filter: blur(10px);
+}
+
+#search-area #input-location input {
+    width: 70%;
+    height: 50px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    padding-left: 15px;
+    background-color: rgba(230, 230, 230, 0.8);
+    backdrop-filter: blur(5px);
+    font-size: 16px;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+#search-area #input-location button {
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 0 30px 30px 0;
+    background-color: rgba(251, 253, 255, 0.6);
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+#search-area #input-location button:hover {
+    background-color: rgba(200, 200, 200, 0.8);
+}
+
+#search-area datalist {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5px;
+    position: absolute;
+    z-index: 5;
+}
+
+::placeholder
+{
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* #input-location button 
+{
+    background-color: rgba(251, 253, 255, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid transparent;
+    border-end-end-radius: 12px;
+    cursor: pointer;
+     line-height-step: ; 
+    height: 50px;
+     color: white; 
+}
+ */
+
+
+#particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none; /* So that particles don't block clicks */
+}
+
+.particle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 150, 255, 0.5);
+    pointer-events: none;
+    z-index: 10;
+}
+
+
+
+#give-data-user {
+    width: 70%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#swipper {
+    width: 30%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+#details {
+    display: none;
+    width: 65%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    margin-bottom: 40px;
+}
+
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+
+
+ 
+  #search-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  #input-location {
+    display: flex;
+  }
+  
+  #input-location input {
+    border-radius: 12px 0 0 12px;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  #input-location button {
+    border-radius: 0 12px 12px 0;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+  }
+  
+
+
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #details
+  {
+    margin: 100px auto;
+    background-color: rgba(112, 167, 211, 0.598);
+    /* width: ; */
+    height: 100%;
+  }
+  
+  #details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #details p {
+    font-size: 18px;
+  }
+
+  #swipper
+  {
+width: 30%;
+height: 200px;
+/* border: 2px solid green; */
+  }

@@ -1,0 +1,136 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+
+#backgournd-video video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#page1 {
+    touch-action: pan-up;
+    font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.413);
+    backdrop-filter: blur(8px);
+    z-index: 5;
+}
+
+#contine {
+    color: white;
+    text-align: center;
+    z-index: 5;
+}
+
+#contine h1
+{
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#start-button button
+{
+    font-size: 20px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.53);
+}
+
+
+/* page 2 css  */
+#page2 
+{ 
+    z-index: 3;
+    position: relative;
+    height: 100vh;
+    width: 100px;
+    
+}
+
+
+#particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none; /* So that particles don't block clicks */
+}
+
+.particle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 150, 255, 0.5);
+    pointer-events: none;
+    z-index: 10;
+}
+
+
+/* page 2 css  */
+#page2 
+{
+
+    background-color: rgba(255, 255, 255, 0.452);
+    backdrop-filter: blur(10px);
+    touch-action: pan-up;
+    font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+    height: 130vh;
+    width: 100%;
+}
+
+.cards
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* margin-top: 200px; */
+    position: relative;
+    top: 200px;
+    width: 200%;
+}
+
+.card 
+{
+    width: 350px;
+
+    height: 300px;
+    background-color: rgba(16, 16, 16, 0.612);
+    border: 1px solid transparent;
+    color: white;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+}
+
+.card h1
+{
+text-align: center;
+text-transform: uppercase;
+}
+.card p{
+    text-align: center;
+}
